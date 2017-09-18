@@ -1,0 +1,112 @@
+$w:1210px;
+$h:433px;
+%title {
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #b43339;
+}
+%oul{
+    margin-top: 50px;
+    overflow: hidden;
+}
+body{
+    background: #f2f2f2;
+}
+.find-pwd{
+    width: $w;
+    height: $h;
+    margin: 20px auto;
+    .content{
+        width: 500px;
+        height: 410px;
+        border: 1px solid #b43339;
+        float: left;
+        padding: 0 10px;
+        h4{
+            @extend %title;
+        }
+        ul{
+            @extend %oul;
+            li{
+                width: 480px;
+                height: 60px;
+                padding: 0 20px;
+                label{
+                    display: inline-block;
+                    width: 100px;
+                    text-align: right;
+                    height: 24px;
+                    line-height: 24px;
+                }
+                input{
+                    width: 180px;
+                    height: 22px;
+                    border: 1px solid #333333;
+                    border-radius: 8px;
+                    background: #ffffff;
+                    margin-left: 20px;
+                    padding: 0 10px;
+                }
+                #getMsgPwd{
+                    height: 24px;
+                    line-height: 24px;
+                    margin-left: 20px;
+                    padding:0 20px;
+                    font-size: 13px;
+                }
+                .loginmsg{
+                    margin-left: 125px;
+                    display: none;
+                }
+                #telpwd{
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .info{
+        width: 310px;
+        height: 250px;
+        float: right;
+        h4{
+            @extend %title;
+        }
+        ul{
+            @extend %oul;
+            margin-top: 20px;
+            li{
+                overflow: hidden;
+                margin-bottom: 10px;
+                padding-left: 30px;
+                span{
+                    display: inline-block;
+                    width: 30px;
+                    height: 25px;
+                    background-image: url('../img/find-pwd.png');
+                    background-repeat: no-repeat;
+                    float: left;
+                }
+                p{
+                    float: left;
+                }
+                .s1{
+                    background-position: 3px -300px;
+                }
+                .s2{
+                    background-position: 0 -350px;
+                }
+                .s3{
+                    background-position: 0 -400px;
+                }
+                .s4{
+                    background-position: 0 -450px;
+                }
+            }
+        }
+        .freerig{
+            padding-left: 150px;
+        }
+    }
+}

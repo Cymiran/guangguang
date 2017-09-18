@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>逛逛网</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sweet-alert/sweet-alert.css">
+    <link rel="stylesheet" href="../../css/commen.css">
+    <link rel="stylesheet" href="../../css/register.css">
+    <script data-main="../../js/moduleJs/register" src="../../js/requirejs/require.js"></script>
+</head>
+<body>
+    <div class="contain">
+        <div class="main">
+            <div class="header">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../../img/logo.png" alt="">
+                    </a>
+                </h1>
+                <span>欢迎注册</span>
+                <a class="go_login" href="./login.html">我已注册，去登录  &gt;</a>
+            </div>
+            <div class="content">
+                <div class="loginmsg">您的账户名必须输入</div>
+                <ul>
+                    <li>
+                        <label for="">用户名</label>
+                        <div class="input_text">
+                            <input id="userName" type="text" placeholder="您的账户和用户名">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">推荐人</label>
+                        <div class="input_text">
+                            <input id="telNum" type="text" placeholder="请输入推荐人手机号">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">设置密码</label>
+                        <div class="input_text">
+                            <input id="pw" type="password" placeholder="建议至少使用两种字符组合">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">确认密码</label>
+                        <div class="input_text">
+                            <input id="repw" type="password" placeholder="请再次输入密码">
+                        </div>
+                    </li>
+                    <div class="check-input">
+                        <label class="">
+                            <input id="checkB" type="checkbox" checked> 同意逛逛网服务条款
+                        </label>
+                    </div>
+                    <button id="send" class="btn btn-large btn-block btn-danger" type="button">提交注册</button>
+                </ul>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

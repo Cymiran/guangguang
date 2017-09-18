@@ -1,0 +1,103 @@
+.find-pwd .content h4, .find-pwd .info h4 {
+  font-weight: 500;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #b43339;
+}
+
+.find-pwd .content ul, .find-pwd .info ul {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.find-pwd {
+  width: 1210px;
+  height: 433px;
+  margin: 20px auto;
+}
+.find-pwd .content {
+  width: 500px;
+  height: 410px;
+  border: 1px solid #b43339;
+  float: left;
+  padding: 0 10px;
+}
+.find-pwd .content ul li {
+  width: 480px;
+  height: 60px;
+  padding: 0 20px;
+}
+.find-pwd .content ul li label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  height: 24px;
+  line-height: 24px;
+}
+.find-pwd .content ul li input {
+  width: 180px;
+  height: 22px;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-left: 20px;
+  padding: 0 10px;
+}
+.find-pwd .content ul li #getMsgPwd {
+  height: 24px;
+  line-height: 24px;
+  margin-left: 20px;
+  padding: 0 20px;
+  font-size: 13px;
+}
+.find-pwd .content ul li .loginmsg {
+  margin-left: 125px;
+  display: none;
+}
+.find-pwd .content ul li #telpwd {
+  display: inline-block;
+  margin-left: 20px;
+}
+.find-pwd .info {
+  width: 310px;
+  height: 250px;
+  float: right;
+}
+.find-pwd .info ul {
+  margin-top: 20px;
+}
+.find-pwd .info ul li {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.find-pwd .info ul li span {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image: url("../img/find-pwd.png");
+  background-repeat: no-repeat;
+  float: left;
+}
+.find-pwd .info ul li p {
+  float: left;
+}
+.find-pwd .info ul li .s1 {
+  background-position: 3px -300px;
+}
+.find-pwd .info ul li .s2 {
+  background-position: 0 -350px;
+}
+.find-pwd .info ul li .s3 {
+  background-position: 0 -400px;
+}
+.find-pwd .info ul li .s4 {
+  background-position: 0 -450px;
+}
+.find-pwd .info .freerig {
+  padding-left: 150px;
+}

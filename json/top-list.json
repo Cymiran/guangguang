@@ -1,0 +1,280 @@
+{
+    "list" : [
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙","连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉","连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙","连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙","连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["艺术品商城","玉雕","石雕"],
+            "listdetail" : [
+                {
+                    "name" : "当季流行",
+                    "arr" : ["项坠/玉坠","木雕","玉雕","花瓶","石雕","非金属矿物制品"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai4.jpeg",
+                "../../img/pinpai5.jpeg"
+            ]
+        },
+        {
+            "listnav" : ["女装","配饰","内衣","裙子"],
+            "listdetail" : [
+                {
+                    "name" : "精品女装",
+                    "arr" : ["连衣裙","职业套装","阔腿裤","衬衫","毛呢外套","女士T恤","背带裤","短裙"]
+                },
+                {
+                    "name" : "精美配饰",
+                    "arr" : ["围巾/丝巾/披肩","帽子","耳环","项链","戒指","手链","头饰","耳钉"]
+                }
+            ],
+            "imglist1" : [
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg",
+                "../../img/pinpai2.jpeg",
+                "../../img/pinpai3.jpeg",
+                "../../img/pinpai1.jpeg"
+            ],
+            "imglist2" : [
+                "../../img/pinpai5.jpeg",
+                "../../img/pinpai4.jpeg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,409 @@
+.text-danger {
+  color: #fe3333;
+}
+
+.top .three .three-main .all .alllist .listbox .box-r ul.imglist li a img, .top .three .three-main .all .alllist .listbox .box-r ul.imgl li a img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #fe3333;
+  text-decoration: none !important;
+}
+
+.top {
+  width: 100%;
+  background: #f2f2f2;
+}
+.top .one {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  background: #e4e4e4;
+}
+.top .one .one-main {
+  width: 1210px;
+  height: 100%;
+  margin: 0 auto;
+}
+.top .one .one-main .one-left {
+  float: left;
+}
+.top .one .one-main .one-left .tit {
+  float: left;
+}
+.top .one .one-main .one-left .gps {
+  width: 70px;
+  float: left;
+  position: relative;
+}
+.top .one .one-main .one-left .gps ul#citys {
+  position: absolute;
+  width: 500px;
+  min-height: 200px;
+  top: 33px;
+  left: 0;
+  line-height: 13px;
+  background: #ffffff;
+  padding: 20px 50px;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+  box-shadow: 0px 5px 7px #ddd;
+}
+.top .one .one-main .one-left .gps ul#citys li {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.top .one .one-main .one-left .gps ul#citys li h4 {
+  padding-bottom: 10px;
+}
+.top .one .one-main .one-left .gps ul#citys li a {
+  display: inline-block;
+  padding: 5px 3px;
+  text-decoration: none;
+}
+.top .one .one-main .one-left .gps ul#citys li a:hover {
+  color: #e4393c;
+}
+.top .one .one-main .one-left #markName {
+  cursor: pointer;
+}
+.top .one .one-main .one-right {
+  float: right;
+  width: 500px;
+  height: 100%;
+}
+.top .one .one-main .one-right #noName, .top .one .one-main .one-right #name {
+  font-size: 14px;
+  float: left;
+}
+.top .one .one-main .one-right #name {
+  display: none;
+}
+.top .one .one-main .one-right .mine {
+  float: right;
+}
+.top .one .one-main .one-right .mine a {
+  padding-left: 25px;
+  background-image: url("../img/top-icon.png");
+  background-repeat: no-repeat;
+}
+.top .one .one-main .one-right .mine .a1 {
+  background-position: 2px -39px;
+}
+.top .one .one-main .one-right .mine .a2 {
+  background-position: 2px -58px;
+}
+.top .one .one-main .one-right .mine .a3 {
+  background-position: 2px -79px;
+}
+.top .one .one-main .one-right .mine .a4 {
+  background-position: 2px -97px;
+}
+.top .two {
+  width: 100%;
+  height: 118px;
+  background: #f2f2f2;
+}
+.top .two .two-main {
+  width: 1210px;
+  height: 100%;
+  margin: 0 auto;
+}
+.top .two .two-main .header {
+  float: left;
+  height: 100%;
+}
+.top .two .two-main .header a {
+  display: inline-block;
+}
+.top .two .two-main .header h1 {
+  float: left;
+  margin-top: 20px;
+}
+.top .two .two-main .search {
+  float: left;
+  margin-left: 80px;
+}
+.top .two .two-main .search .search-input {
+  width: 535px;
+  height: 36px;
+  background: #fe3333;
+  margin-top: 30px;
+}
+.top .two .two-main .search .search-input input {
+  width: 410px;
+  height: 32px;
+  background: #ffffff;
+  margin-top: 2px;
+  margin-left: 2px;
+  outline: none;
+  border: 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.top .two .two-main .search .search-input #searchBtn {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  float: right;
+  padding: 3px 40px;
+  cursor: pointer;
+}
+.top .two .two-main .search .hot-words {
+  margin-top: 10px;
+}
+.top .two .two-main .search .hot-words a {
+  padding: 0 5px;
+}
+.top .two .two-main .erweim {
+  margin-left: 90px;
+  float: left;
+}
+.top .three {
+  width: 100%;
+  height: 46px;
+  background: #fe3333;
+}
+.top .three .three-main {
+  width: 1210px;
+  height: 100%;
+  margin: 0 auto;
+}
+.top .three .three-main .all {
+  width: 220px;
+  height: 46px;
+  line-height: 46px;
+  background: #e93030;
+  text-align: left;
+  padding-left: 15px;
+  float: left;
+  position: relative;
+}
+.top .three .three-main .all a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+.top .three .three-main .all .list-icon {
+  font-size: 15px;
+  color: #fff;
+  padding-right: 10px;
+}
+.top .three .three-main .all .alllist {
+  width: auto;
+  height: 494px;
+  position: absolute;
+  z-index: 98;
+  top: 46px;
+  left: 0px;
+}
+.top .three .three-main .all .alllist ul.typelist {
+  width: 220px;
+  overflow: hidden;
+  border: 1px solid #474747;
+  border-top: 0;
+}
+.top .three .three-main .all .alllist ul.typelist li {
+  overflow: hidden;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+  background: rgba(25, 25, 25, 0.8);
+}
+.top .three .three-main .all .alllist ul.typelist li a {
+  font-size: 13px;
+  display: inline-block;
+  height: 100%;
+  line-height: 38px;
+  margin: 0 5px;
+}
+.top .three .three-main .all .alllist ul.typelist li a:hover {
+  text-decoration: solid !important;
+}
+.top .three .three-main .all .alllist ul.typelist li span {
+  display: inline-block;
+  width: 20px;
+  height: 38px;
+  background-image: url("../img/list-icon.png");
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 6px;
+}
+.top .three .three-main .all .alllist ul.typelist li .s1, .top .three .three-main .all .alllist ul.typelist li .s4, .top .three .three-main .all .alllist ul.typelist li .s7, .top .three .three-main .all .alllist ul.typelist li .s10 {
+  background-position: 2px 9px;
+}
+.top .three .three-main .all .alllist ul.typelist li .s2, .top .three .three-main .all .alllist ul.typelist li .s5, .top .three .three-main .all .alllist ul.typelist li .s8, .top .three .three-main .all .alllist ul.typelist li .s11 {
+  background-position: 2px -29px;
+}
+.top .three .three-main .all .alllist ul.typelist li .s3, .top .three .three-main .all .alllist ul.typelist li .s6, .top .three .three-main .all .alllist ul.typelist li .s9, .top .three .three-main .all .alllist ul.typelist li .s12 {
+  background-position: 2px -65px;
+}
+.top .three .three-main .all .alllist ul.typelist li.active {
+  background: #fff;
+}
+.top .three .three-main .all .alllist ul.typelist li.active a {
+  color: #fe3333;
+}
+.top .three .three-main .all .alllist ul.typelist li.active .s1, .top .three .three-main .all .alllist ul.typelist li.active .s4, .top .three .three-main .all .alllist ul.typelist li.active .s7, .top .three .three-main .all .alllist ul.typelist li.active .s10 {
+  background-position: -16px 9px;
+}
+.top .three .three-main .all .alllist ul.typelist li.active .s2, .top .three .three-main .all .alllist ul.typelist li.active .s5, .top .three .three-main .all .alllist ul.typelist li.active .s8, .top .three .three-main .all .alllist ul.typelist li.active .s11 {
+  background-position: -16px -29px;
+}
+.top .three .three-main .all .alllist ul.typelist li.active .s3, .top .three .three-main .all .alllist ul.typelist li.active .s6, .top .three .three-main .all .alllist ul.typelist li.active .s9, .top .three .three-main .all .alllist ul.typelist li.active .s12 {
+  background-position: -16px -65px;
+}
+.top .three .three-main .all .alllist .listbox {
+  width: 990px;
+  min-height: 457px;
+  border: 1px solid #F0F0F0;
+  background: #fff;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 219px;
+  display: none;
+}
+.top .three .three-main .all .alllist .listbox .listdet {
+  width: 750px;
+  float: left;
+  padding: 0 30px;
+  padding-right: 0;
+}
+.top .three .three-main .all .alllist .listbox .listdet .detail-nav {
+  margin: 15px 0 10px 0;
+}
+.top .three .three-main .all .alllist .listbox .listdet .detail-nav a {
+  font-size: 12px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0px 10px;
+  background: #fe3333;
+  color: #fff;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list {
+  overflow: hidden;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list li {
+  overflow: hidden;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list li span {
+  font-size: 14px;
+  color: #000000;
+  display: inline-block;
+  margin-right: 50px;
+  float: left;
+  height: 30px;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list li .shit {
+  float: left;
+  width: 535px;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list li .shit a {
+  padding: 0 5px;
+  color: #333;
+  font-size: 12px;
+}
+.top .three .three-main .all .alllist .listbox .listdet #detail-list li .shit a:hover {
+  color: #fe3333;
+  text-decoration: solid;
+}
+.top .three .three-main .all .alllist .listbox .box-r {
+  width: 230px;
+  height: auto;
+  background: #f2f2f2;
+  float: right;
+  padding: 10px;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imglist, .top .three .three-main .all .alllist .listbox .box-r ul.imgl {
+  overflow: hidden;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imglist li, .top .three .three-main .all .alllist .listbox .box-r ul.imgl li {
+  width: 105px;
+  height: 46px;
+  float: left;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imglist li a, .top .three .three-main .all .alllist .listbox .box-r ul.imgl li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imgl {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imgl li {
+  width: 100%;
+  height: 104px;
+  background: #fff;
+}
+.top .three .three-main .all .alllist .listbox .box-r ul.imgl li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.top .three .three-main ul.navs {
+  float: left;
+  height: 46px;
+  overflow: hidden;
+}
+.top .three .three-main ul.navs li {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.top .three .three-main ul.navs li a {
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 5px;
+  border-bottom: 2px solid transparent;
+}
+.top .three .three-main ul.navs li a:hover {
+  background: none;
+  border-bottom: 2px solid #fff;
+}
+.top .three .three-main ul.navs li.active a {
+  background: none;
+  border-bottom: 2px solid #fff;
+}
+
+#ui-id-1.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+  width: 405px;
+  background: #fff;
+  top: -132px !important;
+  z-index: 99;
+  padding: 5px 0 !important;
+}
+#ui-id-1.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front li {
+  margin: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#ui-id-1.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front li:hover {
+  background: #e93030;
+  color: #fff;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}

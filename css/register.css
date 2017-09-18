@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*变量定义*/
+.main .header h1, .main .header span, .main .content ul li label {
+  float: left;
+}
+
+.main .header a.go_login, .main .content ul li .input_text {
+  float: right;
+}
+
+.main .header h1 {
+  margin-top: 20px;
+}
+
+.main .header a, .main .header span, .main .header a.go_login, .main .content ul li label {
+  display: inline-block;
+}
+
+/*样式加载*/
+.contain, body {
+  width: 100%;
+  background: #f2f2f2;
+  color: #333;
+  font-size: 12px;
+}
+
+.main {
+  width: 1210px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+.main .header {
+  height: 102px;
+}
+.main .header span {
+  font-size: 20px;
+  margin: 30px 0 0 20px;
+}
+.main .header a.go_login {
+  font-size: 14px;
+  margin-top: 70px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.main .header a.go_login:hover {
+  color: #e4393c;
+}
+.main .content {
+  height: 462px;
+  border-top: 2px solid #e4393c;
+  background: #ffffff;
+  position: relative;
+}
+.main .content .loginmsg {
+  border: 1px solid #faccc6;
+  color: #e4393c;
+  background: #ffebeb;
+  line-height: 20px;
+  width: 310px;
+  margin-top: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 424px;
+  display: none;
+}
+.main .content ul {
+  width: 380px;
+  margin: 35px auto;
+  overflow: hidden;
+}
+.main .content ul li {
+  margin: 20px 0;
+  padding: 0 20px;
+  width: 380px;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+}
+.main .content ul li label {
+  line-height: 50px;
+}
+.main .content ul li .input_text {
+  width: 243px;
+  height: 100%;
+}
+.main .content ul li .input_text input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.main .content ul button {
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+}

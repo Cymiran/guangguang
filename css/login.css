@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*变量定义*/
+.main .header h1 {
+  float: left;
+}
+
+.main .header h1 {
+  margin-top: 20px;
+}
+
+.main .header a, .content .login .box .inputs span {
+  display: inline-block;
+}
+
+/*样式加载*/
+.container, body {
+  width: 100%;
+  background: #ffffff;
+  color: #333333;
+  font-size: 12px;
+}
+
+.main {
+  width: 1210px;
+  margin: 0 auto;
+}
+.main .header {
+  height: 105px;
+}
+
+.content {
+  width: 100%;
+  height: 600px;
+  background: url("../img/loginbg.jpeg") no-repeat center center;
+}
+.content .login {
+  width: 1210px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.content .login .box {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 360px;
+  height: 370px;
+  background: #ffffff;
+  z-index: 100;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.content .login .box h3 {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #d7153a;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.content .login .box .inputs {
+  width: 310px;
+  height: 48px;
+  border: 1px solid #9e9e99;
+  margin: 20px auto;
+}
+.content .login .box .inputs input {
+  outline: none;
+  border: 0;
+  float: right;
+  width: 245px;
+  height: 100%;
+  font-size: 14px;
+}
+.content .login .box .inputs span {
+  width: 47px;
+  height: 100%;
+  border-right: 1px solid #9e9e9e;
+  float: left;
+  background: #f2f2f2;
+  font-size: 20px;
+  color: #d1d1d1;
+  text-align: center;
+  line-height: 46px;
+  margin-top: -1px;
+}
+.content .login .box .loginmsg {
+  color: #e4393c;
+  line-height: 20px;
+  width: 310px;
+  margin-top: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  display: none;
+}
+.content .login .box .forgetpw {
+  text-align: right;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.content .login .box #login {
+  width: 310px;
+  height: 48px;
+  margin: 20px auto;
+  font-size: 22px;
+}
+.content .login .box .bott {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  padding: 10px 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.content .login .box .bott .bot-l {
+  float: left;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+}
+.content .login .box .bott .bot-r {
+  float: right;
+  font-weight: 500;
+  font-size: 18px;
+}

@@ -1,0 +1,112 @@
+
+
+/*变量定义*/
+$w :1210px;
+$bg-color : #f2f2f2;
+$font-color:#333;
+$headHeight:102px;
+%left{
+    float: left;
+}
+%right{
+    float :right;
+}
+%margin-top-md{
+    margin-top: 20px;
+}
+%inline-block{
+    display:inline-block;
+}
+/*样式加载*/ 
+.contain,body{
+    width: 100%;
+    background: $bg-color;
+    color:$font-color;
+    font-size: 12px;
+}
+.main{
+    width: $w;
+    min-height:300px;
+    margin: 0 auto;
+    .header{
+        height:$headHeight;
+        a{
+            @extend %inline-block;
+        }
+        h1{
+            @extend %left;
+            @extend %margin-top-md;
+        }
+        span{
+            @extend %inline-block;
+            @extend %left;
+            font-size:20px;
+            margin:30px 0 0 20px;
+        }
+        a.go_login{
+            @extend %inline-block;
+            @extend %right;
+            font-size: 14px;
+            margin-top: 70px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        a.go_login:hover{
+            color: #e4393c;
+        }
+    }
+    .content{
+        height:462px;
+        border-top: 2px solid #e4393c;
+        background: #ffffff;
+        position: relative;
+        .loginmsg{
+            border: 1px solid #faccc6;
+            color: #e4393c;
+            background: #ffebeb;
+            line-height: 20px;
+            width: 310px;
+            margin-top: 10px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 10px;
+            left: 424px;
+            display: none;
+        }
+        ul{
+            width: 380px;
+            margin: 35px auto;
+            overflow: hidden;
+            li{
+                margin: 20px 0;
+                padding: 0 20px;
+                width: 380px;
+                height: 50px;
+                border: 1px solid #d7d7d7;
+                label{
+                    @extend %inline-block;
+                    @extend %left;
+                    line-height: 50px;
+                }
+                .input_text{
+                    @extend %right;
+                    width: 243px;
+                    height: 100%;
+                    input{
+                        border: 0;
+                        outline: none;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                    }
+                }
+            }
+            button{
+                height: 50px;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

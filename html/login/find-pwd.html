@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找回密码</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../css/commen.css">
+    <link rel="stylesheet" href="../../css/find-pwd.css">
+    <script data-main="../../js/moduleJs/find-pwd" src="../../js/requirejs/require.js"></script>
+</head>
+<body>
+    <div class="find-pwd">
+        <div class="content">
+            <h4>取回密码&nbsp;-&nbsp;-&nbsp;-&nbsp;通过手机验证码</h4>
+            <ul>
+                <li>
+                    <div class="input-info">
+                        <label for="">登录名:</label>
+                        <input id="username" type="text" placeholder="请输入你要找回密码的用户名">
+                    </div>
+                    <div id="username" class="loginmsg">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
+                        <span class="text-danger"></span>    
+                    </div>       
+                </li>
+                <li>
+                    <div class="input-info">
+                        <label for="">手机号码:</label>
+                        <input type="text" id="number">
+                        <button id="getMsgPwd" type="button" class="btn btn-info">获取密码</button>
+                    </div>
+                    <div id="tel" class="loginmsg">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
+                        <span  class="text-danger"></span>    
+                    </div>       
+                </li>
+                <li>
+                    <div class="input-info">
+                        <label for="">手机获取密码:</label>
+                        <input id="vailpwd" type="text">
+                        <span id="telpwd" class="loginmsg" class="text-default">校验码是6位数字</span> 
+                    </div>  
+                    <div id="getpwd" class="loginmsg">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
+                        <span  class="text-danger"></span>    
+                    </div>      
+                </li>
+                <li>
+                    <div class="input-info text-center">
+                        <button id="ok" class="btn btn-primary" type="button">确定</button>
+                    </div>      
+                </li>
+                <li>
+                    <p>请致电客服 &nbsp;&nbsp;<span class="text-danger">客服电话：0592-3320222</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <h4>新用户注册</h4>
+            <ul>
+                <li>
+                    <span class="s1"></span>
+                    <p>先验货在付款，交易更安全</p>
+                </li>
+                <li>
+                    <span class="s2"></span>
+                    <p>精选诚信商户，卖家可信赖</p>
+                </li>
+                <li>
+                    <span class="s3"></span>
+                    <p>信用诚实可靠，品质有保障</p>
+                </li>
+                <li>
+                    <span class="s4"></span>
+                    <p>强大客服支持，购物更放心</p>
+                </li>
+            </ul>
+            <p class="freerig">
+                <a href="../login/register.html" class="btn btn-warning" type="button">免费注册</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
