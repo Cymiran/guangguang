@@ -1,0 +1,125 @@
+{
+    "list" : [
+        {
+            "type" : "1",
+            "title1" : "玉石工艺",
+            "title2" : ["JADE","PRPCESS"],
+            "more" : "查看更多",
+            "goods" : [
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/p1.jpeg"
+                },
+                {
+                    "count" : "2",
+                    "imgurl" :["../../img/p2.jpeg","../../img/p3.jpeg"]
+                },
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/p1.jpeg"
+                },
+                {
+                    "count" : "2",
+                    "imgurl" :["../../img/p2.jpeg","../../img/p3.jpeg"]
+                },
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/p1.jpeg"
+                }
+                
+            ]
+        },
+        {
+            "type" : "2",
+            "glist" :[
+                {
+                    "pos" : "gl",
+                    "title1" : "潮流女装",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/pp1.jpeg",
+                    "nav" : ["连衣裙","时尚衬衫","针织衫","牛仔裤","T恤"],
+                    "imgArr" : ["../../img/pp2.jpeg","../../img/pp2.jpeg","../../img/pp2.jpeg","../../img/pp2.jpeg"]
+                },
+                {
+                    "pos" : "gr",
+                    "title1" : "精品男装",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/ppp1.jpeg",
+                    "nav" : ["休闲裤","时尚衬衫","T恤","西服"],
+                    "imgArr" : ["../../img/pp2.jpeg","../../img/pp2.jpeg","../../img/pp2.jpeg","../../img/pp2.jpeg"]
+                }
+            ]
+        },
+        {
+            "type" : "2",
+            "glist" :[
+                {
+                    "pos" : "gl",
+                    "title1" : "时尚鞋靴",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/xie1.jpeg",
+                    "nav" : ["女士凉鞋","拖鞋","雨鞋","男士凉鞋","跑步鞋"],
+                    "imgArr" : ["../../img/xie2.jpeg","../../img/xie2.jpeg","../../img/xie2.jpeg","../../img/xie2.jpeg"]
+                },
+                {
+                    "pos" : "gr",
+                    "title1" : "居家生活",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/jia1.jpeg",
+                    "nav" : ["床上用品","居家鞋","收纳/储存","餐具"],
+                    "imgArr" : ["../../img/jia2.jpeg","../../img/jia2.jpeg","../../img/jia2.jpeg","../../img/jia2.jpeg"]
+                }
+            ]
+        },
+        {
+            "type" : "1",
+            "title1" : "潮电酷玩",
+            "title2" : ["JADE","PRPCESS"],
+            "more" : "查看更多",
+            "goods" : [
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/chao1.jpeg"
+                },
+                {
+                    "count" : "2",
+                    "imgurl" :["../../img/chao2.jpeg","../../img/chao4.jpeg"]
+                },
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/chao3.jpeg"
+                },
+                {
+                    "count" : "2",
+                    "imgurl" :["../../img/chao4.jpeg","../../img/chao2.jpeg"]
+                },
+                {
+                    "count" : "1",
+                    "imgurl" : "../../img/chao1.jpeg"
+                }
+                
+            ]
+        },
+        {
+            "type" : "2",
+            "glist" :[
+                {
+                    "pos" : "gl",
+                    "title1" : "户外出行",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/hu1.jpeg",
+                    "nav" : ["户外鞋","户外服装","登山用品","户外家具"],
+                    "imgArr" : ["../../img/hu2.jpeg","../../img/hu2.jpeg","../../img/hu2.jpeg","../../img/hu2.jpeg"]
+                },
+                {
+                    "pos" : "gr",
+                    "title1" : "亲子时光",
+                    "title2" : ["THE TREND","OF WOMENS"],
+                    "img1" : "../../img/qin1.jpeg",
+                    "nav" : ["奶瓶/餐具","口水巾","睡袋","儿童玩具"],
+                    "imgArr" : ["../../img/qin2.jpeg","../../img/qin2.jpeg","../../img/qin2.jpeg","../../img/qin2.jpeg"]
+                }
+            ]
+        }
+    ]
+}
