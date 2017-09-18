@@ -1,6 +1,6 @@
 require(['config'],function(m){
-    require(['jquery','topSearch','swiper','markerJs','navAll','banner'],
-    function($,search,swiper,marker,navAll,banner){
+    require(['jquery','topSearch','swiper','markerJs','navAll','banner','goods'],
+    function($,search,swiper,marker,navAll,banner,goods){
         $(function(){
             console.log('初始化...')
             // 页面顶部
@@ -20,6 +20,7 @@ require(['config'],function(m){
             // 主体
             $('#main-cont').load('../html/sub/main.html',() => {
                 banner.init();
+                goods.init();
             })
             // 页脚
             $('#footer').load('../html/sub/footer.html')

@@ -18,7 +18,8 @@ requirejs.config({
 		'loginVail' : 'moduleJs/top/form2',
 		'topSearch' : 'moduleJs/top/top-search',
 		'navAll' : 'moduleJs/top/nav-all',
-		'banner' : 'moduleJs/main/banner'
+		'banner' : 'moduleJs/main/banner',
+		'goods' : 'moduleJs/main/goods'
 	},
 	shim: {
 		"commen" : {
