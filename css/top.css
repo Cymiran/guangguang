@@ -140,6 +140,7 @@ a:hover {
   height: 36px;
   background: #fe3333;
   margin-top: 30px;
+  position: relative;
 }
 .top .two .two-main .search .search-input input {
   width: 410px;
@@ -159,6 +160,17 @@ a:hover {
   float: right;
   padding: 3px 40px;
   cursor: pointer;
+}
+.top .two .two-main .search .search-input #ullist {
+  position: absolute;
+  top: 37px;
+  padding-top: 60px;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  overflow: hidden;
+  width: 410px;
+  display: none;
 }
 .top .two .two-main .search .hot-words {
   margin-top: 10px;

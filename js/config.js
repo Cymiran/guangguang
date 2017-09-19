@@ -3,7 +3,7 @@
  */
 
 requirejs.config({
-	baseUrl:'http://localhost:8080/js',
+	baseUrl:'http://localhost:8000/js',
 	paths: {
 		"jquery" : "plugin/jquery/jquery-1.11.3",
 		"jquery-ui" : "plugin/jquery/jquery-ui",
@@ -15,11 +15,13 @@ requirejs.config({
 		'find-pwd' : 'moduleJs/find-pwd',
 		// top 页面
 		'markerJs' : 'moduleJs/top/marker',
-		'loginVail' : 'moduleJs/top/form2',
+		'loginVail' : 'moduleJs/form2',
 		'topSearch' : 'moduleJs/top/top-search',
 		'navAll' : 'moduleJs/top/nav-all',
 		'banner' : 'moduleJs/main/banner',
-		'goods' : 'moduleJs/main/goods'
+		'goods' : 'moduleJs/main/goods',
+		'elevator' : 'moduleJs/main/elevator',
+		'detailShow' : 'moduleJs/main/detail-show'
 	},
 	shim: {
 		"commen" : {

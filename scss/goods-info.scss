@@ -1,0 +1,292 @@
+$w :1210px;
+$bg-color:#fff;
+button#buy.btn-danger,button#buy.btn-danger:hover,button#addCart.btn-danger,button#addCart.btn-danger:hover{
+    background: #fe3333;
+    color:#fff;
+    border: 0;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    float: left;
+}
+.detail-main{
+    width: $w;
+    min-height: 600px;
+    background: $bg-color;
+    margin: 0 auto;
+    .one{
+        width: 100%;
+        height: 570px;
+        .one-l{
+            width: 980px;
+            width: 100%;
+            float: left;
+            overflow: hidden;
+            border-right: #f2f2f2;
+            h5{
+                padding: 20px 0 10px 0;
+                font-weight: 400;
+                a:hover{
+                    color: #fe3333;
+
+                }
+            }
+            .zoom{
+                width: 360px;
+                height: 472px;
+                float: left;
+                border: 1px solid #f2f2f2;
+                .big{
+                    width:300px;
+                    height: 300px;
+                    margin: 29px auto 50px;
+                    position: relative;
+                    img#smallImg{
+                        width: 300px;
+                        height: 300px;
+                    }
+                    #smallCursor{
+                        width: 150px;
+                        height: 150px;
+                        border: 1px solid #f2f2f2;
+                        background:rgba(253, 212, 89, 0.4);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                    }
+                    #bigCursor{
+                        width: 350px;
+                        height: 350px;
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: 99px;
+                        left: 310px;
+                        top: 0;
+                        display: none;
+                        border: 1px solid #f2f2f2;
+                        img#bigImg{
+                            width: 600px;
+                            height: 600px;
+                        }
+                    }
+                }
+                .small{
+                    width: 52px;
+                    height: 52px;
+                    margin-left: 25px;
+                    border: 1px solid #f2f2f2;
+                    img{
+                        width: 52px;
+                        height: 52px;
+                    }
+                }
+                
+            }
+            .info{
+                width: 600px;
+                height: 497px;
+                float: left;
+                padding: 0 20px;
+                h3{
+                    padding: 15px 0;
+                }
+                .prices{
+                    width: 100%;
+                    height: 99px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border: 1px solid #f2f2f2;
+                    p{
+                        font-size: 14px;
+                        color: #b7b7b7;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: #fe3333;
+                            
+                        }
+                    }
+                }
+                h4.has-border{
+                    margin: 20px 0;
+                    border-top: 1px solid #f2f2f2;
+                    border-bottom: 1px solid #f2f2f2;
+                    padding: 8px 0;
+                    span{
+                        margin-left: 60px;
+                        label{
+                            color: #fe3333;
+                            margin-right: 50px;
+                        }
+                    }
+                }
+                .count{
+                    span.static,.ser{
+                        font-size: 17px;
+                        letter-spacing: 8px;
+                        color: #4c4c4c;
+                        font-weight: 300;
+                    }
+                    span.static.s,.ser{
+                        letter-spacing: 1px;
+                    }
+                    span.add,span.reduce{
+                        display: inline-block;
+                        width: 30px;
+                        height: 40px;
+                        background: #f2f2f2;
+                        border: 1px solid #eaeaea;
+                        text-align: center;
+                        line-height: 40px;
+                        cursor: pointer;
+                    }
+                    input#count{
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #e6e6e6;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                }
+                .bt{
+                    overflow: hidden;
+                }
+                .service{
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    border-top: 1px solid #f2f2f2;
+                    .ser{
+                        font-size: 17px;
+                        color: #4c4c4c;
+                        font-weight: 300;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+    .two{
+        overflow: hidden;
+        .two-l{
+            width: 200px;
+            height: auto;
+            float: left;
+            .shopinfo{
+                width: 200px;
+                height: 298px;
+                border: 1px solid #f93333;
+                text-align: center;
+                padding: 20px 10px;
+                p{
+                    padding: 15px 0;
+                    font-size: 13px;
+                }
+            }
+            .shop-list{
+                margin-top: 20px;
+                width: 200px;
+                height: auto;
+                border: 1px solid #f2f2f2;
+                h3{
+                    padding: 25px;
+                    text-align: center;
+                    border-bottom: 1px solid #f2f2f2;
+                }
+                ul#shoplist{
+                    overflow: hidden;
+                    padding: 24px;
+                    
+                    li{
+                        overflow: hidden;
+                        height: 273px;
+                        border-bottom: 1px solid #f2f2f2;
+                        margin: 10px 0;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                        a{
+                            display: block;
+                            font-size: 13px;
+                            margin-top: 5px;
+                            margin-bottom: 20px;
+                        }
+                        span{
+                            display: block;
+                            font-size: 17px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .two-r{
+            width: 980px;
+            min-height: 500px;
+            border:1px solid #f2f2f2;
+            float: right;
+            #tabs{
+                padding: 0;
+                border: 0; 
+                .ui-widget-header{
+                    background: #fff;
+                    border-bottom: 2px solid #333;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        border: 0;
+                        border-radius: 0;
+                        margin: 0;
+                        padding: 8px;
+                        background: #fff;
+                        outline: none;
+                        a{
+                            font-size: 14px;
+                            color: #333;
+                        }
+                    }
+                    li.ui-tabs-active{
+                        background: #333;
+                        a{
+                            color: #fff;
+                        }
+                        a:focus{
+                            outline: 0;
+                        }
+                    }
+                }
+                #nocom,#pingj{
+                    display: none;
+                }
+                #tabs-3 ul#pingj li{
+                    overflow: hidden;
+                    padding: 40px 20px;
+                    border: 1px solid #f2f2f2;
+                    .head{
+                        float: left;
+                        width: 110px;
+                        text-align: center;
+                    }
+                    .level{
+                        float: left;
+                        width: 540px;
+                        margin-left: 20px;
+                        line-height: 30px;
+                        margin-top: 10px;
+                    }
+                    .num{
+                        float: left;
+                        margin-left: 30px;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

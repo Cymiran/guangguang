@@ -1,0 +1,283 @@
+button#buy.btn-danger, button#buy.btn-danger:hover, button#addCart.btn-danger, button#addCart.btn-danger:hover {
+  background: #fe3333;
+  color: #fff;
+  border: 0;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  float: left;
+}
+
+.detail-main {
+  width: 1210px;
+  min-height: 600px;
+  background: #fff;
+  margin: 0 auto;
+}
+.detail-main .one {
+  width: 100%;
+  height: 570px;
+}
+.detail-main .one .one-l {
+  width: 980px;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  border-right: #f2f2f2;
+}
+.detail-main .one .one-l h5 {
+  padding: 20px 0 10px 0;
+  font-weight: 400;
+}
+.detail-main .one .one-l h5 a:hover {
+  color: #fe3333;
+}
+.detail-main .one .one-l .zoom {
+  width: 360px;
+  height: 472px;
+  float: left;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .one .one-l .zoom .big {
+  width: 300px;
+  height: 300px;
+  margin: 29px auto 50px;
+  position: relative;
+}
+.detail-main .one .one-l .zoom .big img#smallImg {
+  width: 300px;
+  height: 300px;
+}
+.detail-main .one .one-l .zoom .big #smallCursor {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #f2f2f2;
+  background: rgba(253, 212, 89, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.detail-main .one .one-l .zoom .big #bigCursor {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99px;
+  left: 310px;
+  top: 0;
+  display: none;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .one .one-l .zoom .big #bigCursor img#bigImg {
+  width: 600px;
+  height: 600px;
+}
+.detail-main .one .one-l .zoom .small {
+  width: 52px;
+  height: 52px;
+  margin-left: 25px;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .one .one-l .zoom .small img {
+  width: 52px;
+  height: 52px;
+}
+.detail-main .one .one-l .info {
+  width: 600px;
+  height: 497px;
+  float: left;
+  padding: 0 20px;
+}
+.detail-main .one .one-l .info h3 {
+  padding: 15px 0;
+}
+.detail-main .one .one-l .info .prices {
+  width: 100%;
+  height: 99px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .one .one-l .info .prices p {
+  font-size: 14px;
+  color: #b7b7b7;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.detail-main .one .one-l .info .prices p span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fe3333;
+}
+.detail-main .one .one-l .info h4.has-border {
+  margin: 20px 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 8px 0;
+}
+.detail-main .one .one-l .info h4.has-border span {
+  margin-left: 60px;
+}
+.detail-main .one .one-l .info h4.has-border span label {
+  color: #fe3333;
+  margin-right: 50px;
+}
+.detail-main .one .one-l .info .count span.static, .detail-main .one .one-l .info .count .ser {
+  font-size: 17px;
+  letter-spacing: 8px;
+  color: #4c4c4c;
+  font-weight: 300;
+}
+.detail-main .one .one-l .info .count span.static.s, .detail-main .one .one-l .info .count .ser {
+  letter-spacing: 1px;
+}
+.detail-main .one .one-l .info .count span.add, .detail-main .one .one-l .info .count span.reduce {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background: #f2f2f2;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.detail-main .one .one-l .info .count input#count {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  line-height: 40px;
+}
+.detail-main .one .one-l .info .bt {
+  overflow: hidden;
+}
+.detail-main .one .one-l .info .service {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+.detail-main .one .one-l .info .service .ser {
+  font-size: 17px;
+  color: #4c4c4c;
+  font-weight: 300;
+  margin-right: 20px;
+}
+.detail-main .two {
+  overflow: hidden;
+}
+.detail-main .two .two-l {
+  width: 200px;
+  height: auto;
+  float: left;
+}
+.detail-main .two .two-l .shopinfo {
+  width: 200px;
+  height: 298px;
+  border: 1px solid #f93333;
+  text-align: center;
+  padding: 20px 10px;
+}
+.detail-main .two .two-l .shopinfo p {
+  padding: 15px 0;
+  font-size: 13px;
+}
+.detail-main .two .two-l .shop-list {
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .two .two-l .shop-list h3 {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+.detail-main .two .two-l .shop-list ul#shoplist {
+  overflow: hidden;
+  padding: 24px;
+}
+.detail-main .two .two-l .shop-list ul#shoplist li {
+  overflow: hidden;
+  height: 273px;
+  border-bottom: 1px solid #f2f2f2;
+  margin: 10px 0;
+}
+.detail-main .two .two-l .shop-list ul#shoplist li img {
+  width: 150px;
+  height: 150px;
+}
+.detail-main .two .two-l .shop-list ul#shoplist li a {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.detail-main .two .two-l .shop-list ul#shoplist li span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+}
+.detail-main .two .two-r {
+  width: 980px;
+  min-height: 500px;
+  border: 1px solid #f2f2f2;
+  float: right;
+}
+.detail-main .two .two-r #tabs {
+  padding: 0;
+  border: 0;
+}
+.detail-main .two .two-r #tabs .ui-widget-header {
+  background: #fff;
+  border-bottom: 2px solid #333;
+  margin: 0;
+  padding: 0;
+}
+.detail-main .two .two-r #tabs .ui-widget-header li {
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  outline: none;
+}
+.detail-main .two .two-r #tabs .ui-widget-header li a {
+  font-size: 14px;
+  color: #333;
+}
+.detail-main .two .two-r #tabs .ui-widget-header li.ui-tabs-active {
+  background: #333;
+}
+.detail-main .two .two-r #tabs .ui-widget-header li.ui-tabs-active a {
+  color: #fff;
+}
+.detail-main .two .two-r #tabs .ui-widget-header li.ui-tabs-active a:focus {
+  outline: 0;
+}
+.detail-main .two .two-r #tabs #nocom, .detail-main .two .two-r #tabs #pingj {
+  display: none;
+}
+.detail-main .two .two-r #tabs #tabs-3 ul#pingj li {
+  overflow: hidden;
+  padding: 40px 20px;
+  border: 1px solid #f2f2f2;
+}
+.detail-main .two .two-r #tabs #tabs-3 ul#pingj li .head {
+  float: left;
+  width: 110px;
+  text-align: center;
+}
+.detail-main .two .two-r #tabs #tabs-3 ul#pingj li .level {
+  float: left;
+  width: 540px;
+  margin-left: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.detail-main .two .two-r #tabs #tabs-3 ul#pingj li .num {
+  float: left;
+  margin-left: 30px;
+  margin-top: 50px;
+}

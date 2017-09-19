@@ -1,10 +1,10 @@
 require(['config'],function(m){
-    require(['jquery','commen','topSearch','swiper','markerJs','navAll','banner','goods','elevator'],
-    function($,commen,search,swiper,marker,navAll,banner,goods,elevator){
+    require(['jquery','jquery-ui','commen','topSearch','markerJs','navAll','detailShow'],
+    function($,jqueryui,commen,search,marker,navAll,detailShow){
         $(function(){
             console.log('初始化...')
             // 页面顶部
-            $('#header').load('../html/sub/top.html',()=>{
+            $('#header').load('./top.html',()=>{
                 // 用户名登录
                 $('#noName').hide();
                 $('#name').show();
@@ -13,24 +13,21 @@ require(['config'],function(m){
                 search.init({
                     //select表示选择事件
                     callback: function(data){
-                        
                         console.log("%c"+data,"color:red");
                     }
-                });
+                })
                 // 定位
                 marker.init();
                 // 导航 all
-                navAll.init('index');
+                navAll.init('detail');
             })
             // 主体
-            $('#main-cont').load('../html/sub/main.html',() => {
-                banner.init();
-                goods.init();
-                elevator.init();
+            $('#main').load('./goods-detail-main.html',()=>{
+                detailShow.init();
+                $( "#tabs" ).tabs();
             })
             // 页脚
-            $('#footer').load('../html/sub/footer.html')
-            
+            $('#footer').load('./footer.html')
             
             
         })

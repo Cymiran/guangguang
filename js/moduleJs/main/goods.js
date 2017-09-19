@@ -1,8 +1,9 @@
-define(['jquery'],function($){
+define(['jquery','commen'],function($,com){
     return {
         init : function(){
             console.log('加载商品列表');
             let datalist = [];
+            let forlist = [];
             $.ajax({
                 type: 'get',
                 url : '../../../json/goods.json',
@@ -89,21 +90,27 @@ define(['jquery'],function($){
                 type:'get',
                 url : '../../../json/product.json',
                 success:function(data){
-                    let proList = data.prolist;
+                    forlist = data.prolist;
                     let str = '';
-                    for(let i=0;i<proList.length;i++){
+                    for(let i=0;i<forlist.length;i++){
                         str += `
                         <li>
-                            <a href="">
-                                <img src="${proList[i].url}" alt="">
+                            <a href="../../html/sub/goods-detail.html?${forlist[i].id}">
+                                <img src="${forlist[i].url}" alt="">
                             </a>
-                            <p><a href="#">${proList[i].info}</a></p>
-                            <span class="price">￥${proList[i].price}</span>
+                            <p><a href="../../html/sub/goods-detail.html?${forlist[i].id}">${forlist[i].info}</a></p>
+                            <span class="price">￥${forlist[i].price}</span>
                             <span class="buybtn">抢购</span>
                         </li>
                         `;
                     }
                     $('ul.pro').html(str);
+                    $('ul.pro').on('click','li',function(){
+                        forlist = JSON.stringify(forlist);
+                        Cookie.set("productlist",forlist)
+                        let index = $(this).index();
+                        window.location.href = "../../../html/sub/goods-detail.html?"+forlist[index].id;
+                    })
                 }
             })
         }

@@ -264,3 +264,5 @@ var Cookie = {
         document.cookie = key +'='+value+'; '+ (expires?'expires='+expires+'; ':'') + (path?'path=' +path+';':'path=/');
     }
 }
+// 页面传参 数据存储
+var data = {};

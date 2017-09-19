@@ -12,14 +12,27 @@ define(["jquery", "jquery-ui"], function($) {
 						},
 						jsonp : "cb",
 						success : function(res){
-                            response(res.s);
+							response(res.s);
+							if(res.s){
+								$('#ui-id-1').appendTo($('#ullist'));
+								$('#ullist').show()
+							}else{
+								$('#ullist').hide()
+							}
+							
 						}
 					});
 				},
 				select: function(event, ui) {
 					options.callback ? options.callback(ui.item.value) : "";
+					$('#ullist').hide()
 				}
 			})
+			// if($('#ui-id-1').html()){
+			// 	console.log()
+			// 	$('#ui-id-1').appendTo($('#ullist'));
+			// 	$('#ullist').show()
+			// }
 		}
 	}
 });

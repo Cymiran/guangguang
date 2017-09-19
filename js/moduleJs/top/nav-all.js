@@ -1,6 +1,6 @@
 define(['jquery'],function($){
     return {
-        init: function(){
+        init: function(type){
             console.log('导航all');
             //导航 列表
             let arr1 = [];
@@ -82,6 +82,20 @@ define(['jquery'],function($){
                 $('.listbox').hide();
                 $('#listNav').find('.active').removeClass('active')
             })
+
+            // 判断页面 主页面显示 详情页隐藏
+            if(type == 'detail'){
+                $('.alllist').hide();
+                $('.all').on('mouseenter',function(){
+                    $('.alllist').show();
+                })
+                $('.all').on('mouseleave',function(){
+                    $('.alllist').hide();
+                })
+                $('.navs').find('.active').removeClass('active')
+            }else{
+                $('.alllist').show();
+            }
         }
     }
 })

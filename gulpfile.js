@@ -8,6 +8,11 @@ const sass = require("gulp-ruby-sass"); //编译sass
 const rename = require("gulp-rename"); //重命名文件
 // 即使刷新
 const connect = require('gulp-connect');
+
+var webserver = require('gulp-webserver');
+
+var proxy = require('http-proxy-middleware')
+
 // 即时刷新
 gulp.task('refreshHTML',function(){
     gulp.src('./html/**/*.html').pipe(connect.reload());
@@ -33,17 +38,45 @@ gulp.task('js',function(){
     })).pipe(gulp.dest('./babeljs/'))
 })
 
+gulp.task('webserver',function(){
+    gulp.src('./')
+    .pipe(
+        webserver({
+            host: 'localhost',
+            port :8000,
+            livereload :true,
+            directoryListing: {
+                enabel:true,
+                path:'./'
+            },
+            middleware:[
+                proxy('/api',{
+                    target:'http://m.womai.com/',
+                    changeOrigin:true,
+                    pathRewrite:{
+                        '^api' : ''
+                    }
+                })
+            ]
+        })
+    )
+})
+
 // 监听函数 只要有变动 执行任务watch 就会自动执行js任务
 gulp.task('watch',function(){
-	console.log('启动服务器')
-	connect.server({
-		livereload:true
-	});
-	console.log(('启动成功'))
+	// console.log('启动服务器')
+	// // connect.server({
+	// // 	livereload:true
+	// // });
+	// console.log(('启动成功'))
 	//检测文件的变化，执行相应的任务
 	gulp.watch('./html/**/*.html', ['refreshHTML']);
     gulp.watch('./scss/**/*.scss',['compileSass']);
     gulp.watch('./css/**/*.css',['refreshCSS']);
     // gulp.watch('./js/**/*.js',['js']);
     
+})
+
+gulp.task('default',['watch','webserver'],function(){
+    console.log('done');
 })

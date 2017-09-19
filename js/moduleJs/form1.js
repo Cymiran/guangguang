@@ -47,22 +47,6 @@ define(['jquery','commen','sweet-alert'],function($,commen,sweetalert){
                 var isn = !isNumber;
                 var ll = !isLine;
                 if((uu) && (aa) && ((isn) && (isChar) && (ll))){
-                    // 请求数据
-                    $.ajax({
-                        type:'get',
-                        url: 'http://localhost:8080/json/register.json',
-                        data:'userName='+userN,
-                        success : function(data){
-                            for(let val in data){
-	                            	console.log(data[val])
-	                            	if(userN == val){
-	                            		$('.loginmsg').html('名字太受欢迎啦!!!!');
-	                       			message();
-	                            	}
-                            }
-                        }
-                    })
-
                     isUserName = true;
                     username = userN;
                 }
@@ -126,19 +110,43 @@ define(['jquery','commen','sweet-alert'],function($,commen,sweetalert){
                 if(isUserName && ispassword && istel && isrepwd && ischecked){
                     console.log('验证通过，可以注册了')
                     // 存cookie
-                    Cookie.set('username',username);
-                    Cookie.set('password',password);
-                    swal({
-                       title: "注册成功!",
-                        text: "客官要登录啦....", 
-                        type : "success",
-                        showCancelButton: true,  
-                        confirmButtonColor: "#DD6B55",
-                        closeOnCancel: false
-                     },
-                        function(isConfirm){ 
-                            window.location.href = '../../html/login/login.html'
+                    // Cookie.set('username',username);
+                    // Cookie.set('password',password);
+                    $.ajax({
+                        type:'get',
+                        url: 'http://datainfo.duapp.com/shopdata/userinfo.php',
+                        data:{
+                            "status" : "register",
+                            "userID" : username,
+                            "password" : password
+                        },
+                        success:function(data){
+                            if(data == 1){
+                                swal({
+                                    title: "注册成功!",
+                                     text: "客官要登录啦....", 
+                                     type : "success",
+                                     showCancelButton: true,  
+                                     confirmButtonColor: "#DD6B55",
+                                     closeOnCancel: false
+                                  },
+                                     function(isConfirm){ 
+                                         window.location.href = '../../html/login/login.html'
+                                 })
+                            }else {
+                                if(data ==0){
+                                    $('.loginmsg').html('名字太受欢迎啦!!!!');
+                                    message();
+                                }
+                                if(data == 2){
+                                    $('.loginmsg').html('数据库报错');
+                                    message();
+                                }
+                            }
+                            
+                        }
                     })
+                    
                 }
            })
         }

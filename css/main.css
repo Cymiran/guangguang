@@ -7,6 +7,7 @@
 #main-cont .content {
   position: relative;
   /*产品推荐*/
+  /*楼层跳转*/
 }
 #main-cont .content .swiper-container {
   width: 100%;
@@ -295,4 +296,39 @@
 }
 #main-cont .content .prolist ul li:hover {
   border: 1px solid #ff3433;
+}
+#main-cont .content .elivator {
+  width: 68px;
+  height: 190px;
+  position: absolute;
+  top: 900px;
+  left: 30px;
+  display: none;
+  background: #fff;
+}
+#main-cont .content .elivator ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+#main-cont .content .elivator ul li {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+#main-cont .content .elivator ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#main-cont .content .elivator ul li.active {
+  background: #ff3433;
+}
+#main-cont .content .elivator ul li.active a {
+  color: #fff;
 }

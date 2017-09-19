@@ -338,5 +338,41 @@ $w:1210px;
                 }
             }
         }
+        /*楼层跳转*/
+        .elivator{
+            width: 68px;
+            height: 190px;
+            position: absolute;
+            top: 900px;
+            left: 30px;
+            display: none;
+            background: #fff;
+            ul{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border: 1px solid #ddd;
+                border-top: 0;
+                li{
+                    width: 100%;
+                    height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    overflow: hidden;
+                    border-top: 1px solid #ddd;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                li.active{
+                    background: #ff3433;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
