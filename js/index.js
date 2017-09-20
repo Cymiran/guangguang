@@ -1,14 +1,12 @@
 require(['config'],function(m){
-    require(['jquery','commen','topSearch','swiper','markerJs','navAll','banner','goods','elevator'],
-    function($,commen,search,swiper,marker,navAll,banner,goods,elevator){
+    require(['jquery','commen','getUser','topSearch','swiper','markerJs','navAll','banner','goods','elevator'],
+    function($,commen,getUser,search,swiper,marker,navAll,banner,goods,elevator){
         $(function(){
             console.log('初始化...')
             // 页面顶部
             $('#header').load('../html/sub/top.html',()=>{
                 // 用户名登录
-                $('#noName').hide();
-                $('#name').show();
-                $('#username').html(Cookie.get('username'))
+                getUser.init();
                 // 搜索框
                 search.init({
                     //select表示选择事件
@@ -31,7 +29,10 @@ require(['config'],function(m){
             // 页脚
             $('#footer').load('../html/sub/footer.html')
             
-            
+            // 右边购物车导航
+            $('#cart').load('../html/sub/cart.html',() => {
+                console.log('右侧购物车导航....')
+            })
             
         })
     })

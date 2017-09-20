@@ -1,4 +1,4 @@
-define(['jquery'],function($){
+define(['jquery','commen'],function($,commen){
     return {
         init: function(){
             // 获得登录ming

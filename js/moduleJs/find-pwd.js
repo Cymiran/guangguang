@@ -5,17 +5,32 @@ require(['../config'],function(m){
             let istelNum = false;
             let isvalNum = false;
             let valNum;
+            let uname;
+            let pwd;
             $('#username').blur(function(){
                 let un = this.value;
                 if(!un){
                     message('#username','用户名必须输入！');
-                }else{
-                    let uname = Cookie.get('username');
-                    if(un == uname){
-                        isUname = true;
-                    }else{
-                        message('#username','没有该用户！');
-                    }
+                }
+                else{
+                    $.ajax({
+                        dataType:"jsonp",
+                        url: 'http://datainfo.duapp.com/shopdata/getuser.php',
+                        data:{
+                            "userID" : un
+                        },
+                        success:function(data){
+                            if(data.length>=1){
+                                isUname = true;
+                                uname = Cookie.get('username');
+                                valNum = Cookie.get('password');
+                                console.log(uname)
+                            }else{
+                                message('#username','没有该用户！');
+                            }
+                            
+                        }
+                    })
                 }
                 
             })
@@ -59,7 +74,6 @@ require(['../config'],function(m){
                     $('#getMsgPwd').html(t + ' s')  
                     if(t == 0){
                         clearInterval(timer);
-                        valNum = Cookie.get('password')
                         console.log(valNum);
                         $('#getMsgPwd').html('获取密码')
                         $('#getMsgPwd').prop('disabled',false);

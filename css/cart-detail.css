@@ -1,0 +1,145 @@
+body {
+  background: #fff;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f33;
+  text-decoration: none !important;
+}
+
+.cart-container {
+  width: 100%;
+  height: auto;
+}
+.cart-container .cart-head {
+  width: 100%;
+  height: 36px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cart-container .cart-head .head-main {
+  width: 1210px;
+  height: 100%;
+  margin: 0 auto;
+}
+.cart-container .cart-head .head-main a.head-l {
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+  float: left;
+}
+.cart-container .cart-head .head-main a.head-l span.goIndex {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+.cart-container .cart-head .head-main .head-r {
+  width: 500px;
+  height: 100%;
+  float: right;
+}
+.cart-container .cart-head .head-main .head-r a {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 36px;
+}
+.cart-container .cart-main {
+  width: 1210px;
+  height: auto;
+  margin: 0 auto;
+}
+.cart-container .cart-main h3 {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 2px solid #f3f3f3;
+}
+.cart-container .cart-main table {
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+.cart-container .cart-main table th {
+  overflow: hidden;
+  text-align: center;
+}
+.cart-container .cart-main table th div {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+}
+.cart-container .cart-main table th .goodinfo {
+  margin-left: 20px;
+}
+.cart-container .cart-main table td {
+  width: 100%;
+  text-align: center;
+}
+.cart-container .cart-main table td div {
+  float: left;
+  height: 100%;
+}
+.cart-container .cart-main table td .shop {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 10px;
+}
+.cart-container .cart-main table td .info {
+  padding: 10px 20px;
+  width: 100%;
+  line-height: 70px;
+  border: 1px solid #ddd;
+}
+.cart-container .cart-main table .box {
+  width: 60px;
+}
+.cart-container .cart-main table .goodinfo {
+  width: 500px;
+}
+.cart-container .cart-main table .goodinfo img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+}
+.cart-container .cart-main table .goodinfo span {
+  display: inline-block;
+  margin-left: 30px;
+  width: 360px;
+  height: 70px;
+}
+.cart-container .cart-main table .price {
+  width: 140px;
+}
+.cart-container .cart-main table .count {
+  width: 180px;
+  line-height: 70px;
+}
+.cart-container .cart-main table .count span {
+  display: inline-block;
+  width: 26px;
+  height: 34px;
+  background: #dddddd;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+.cart-container .cart-main table .count input {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 34px;
+}
+.cart-container .cart-main table .money {
+  width: 120px;
+}
+.cart-container .cart-main table .option {
+  width: 120px;
+  cursor: pointer;
+}

@@ -87,18 +87,21 @@ define(['jquery','commen'],function($,com){
             })
             // 加载推荐产品
             $.ajax({
-                type:'get',
-                url : '../../../json/product.json',
+                // type:'get',
+                // url : '../../../json/product.json',
+                url:'http://datainfo.duapp.com/shopdata/getGoods.php',
+                dataType : 'jsonp',
                 success:function(data){
-                    forlist = data.prolist;
+                    console.log(JSON.stringify(data))
+                    forlist = data;
                     let str = '';
                     for(let i=0;i<forlist.length;i++){
                         str += `
                         <li>
-                            <a href="../../html/sub/goods-detail.html?${forlist[i].id}">
-                                <img src="${forlist[i].url}" alt="">
+                            <a href="javascrupt:;">
+                                <img src="${forlist[i].goodsListImg}" alt="">
                             </a>
-                            <p><a href="../../html/sub/goods-detail.html?${forlist[i].id}">${forlist[i].info}</a></p>
+                            <p><a href="javascrupt:;">${forlist[i].goodsName}</a></p>
                             <span class="price">￥${forlist[i].price}</span>
                             <span class="buybtn">抢购</span>
                         </li>
@@ -106,13 +109,18 @@ define(['jquery','commen'],function($,com){
                     }
                     $('ul.pro').html(str);
                     $('ul.pro').on('click','li',function(){
-                        forlist = JSON.stringify(forlist);
-                        Cookie.set("productlist",forlist)
+                        let forList = JSON.stringify(forlist);
+                        Cookie.set("productlist",forList)
                         let index = $(this).index();
-                        window.location.href = "../../../html/sub/goods-detail.html?"+forlist[index].id;
+                        let id = forlist[index].goodsID;
+                        console.log(forlist[index])
+                        let curInfo = JSON.stringify(forlist[index]);
+                        Cookie.set("curGoods",curInfo);
+                        window.location.href = "./sub/goods-detail.html?"+id;
                     })
                 }
             })
+            
         }
     }
 })

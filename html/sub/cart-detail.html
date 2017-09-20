@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../css/commen.css">
+    <link rel="stylesheet" href="../../css/cart-detail.css">
+    <script data-main="../../js/cart.js" src="../../js/requirejs/require.js"></script>
+    
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-head">
+            <div class="head-main">
+                <a class="head-l">
+                    <span class="text-danger glyphicon glyphicon-home"></span>
+                    <span class="goIndex">返回逛逛网首页</span>
+                </a>
+                <div class="head-r">
+                    <a id="username" href="javascript:;">阿里巴巴</a>
+                    <a href="javascript:;">我的逛逛网</a>
+                    <a href="javascript:;">购物车</a>
+                    <a href="javascript:;">收藏夹</a>
+                    <a href="javascript:;">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-main">
+            <h3>全部商品</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="box">
+                                <input id="allbox" type="checkbox"> 全选
+                            </div>
+                            <div class="goodinfo">商品信息</div>
+                            <div class="price">单价(元)</div>
+                            <div class="count">数量</div>
+                            <div class="money">金额(元)</div>
+                            <div class="option">操作</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="cartlist">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>
+                            <div class="box">
+                                <input id="allbox" type="checkbox"> 全选
+                            </div>
+                            <div class="delete">删除</div>
+                            <div class="select">
+                                <span>已选</span>
+                                <span id="selectcount"></span>
+                                <span>件商品</span>
+                            </div>
+                            <div class="totail">
+                                <span class="text-gray">合计(不含运费): </span>
+                                <span class="text-danget">￥999.00</span>
+                            </div>
+                            <div class="jiesuan">结算</div>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

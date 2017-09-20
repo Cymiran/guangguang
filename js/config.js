@@ -19,9 +19,13 @@ requirejs.config({
 		'topSearch' : 'moduleJs/top/top-search',
 		'navAll' : 'moduleJs/top/nav-all',
 		'banner' : 'moduleJs/main/banner',
+		'getUser' : 'moduleJs/top/top-getUser',
 		'goods' : 'moduleJs/main/goods',
 		'elevator' : 'moduleJs/main/elevator',
-		'detailShow' : 'moduleJs/main/detail-show'
+		'detailShow' : 'moduleJs/main/detail-show',
+		// 购物车
+		'cartDetail' : 'moduleJs/cart/cart-detail',
+		'animate' : 'animate'
 	},
 	shim: {
 		"commen" : {

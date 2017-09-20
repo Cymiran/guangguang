@@ -110,8 +110,8 @@ define(['jquery','commen','sweet-alert'],function($,commen,sweetalert){
                 if(isUserName && ispassword && istel && isrepwd && ischecked){
                     console.log('验证通过，可以注册了')
                     // 存cookie
-                    // Cookie.set('username',username);
-                    // Cookie.set('password',password);
+                    Cookie.set('username',username);
+                    Cookie.set('password',password);
                     $.ajax({
                         type:'get',
                         url: 'http://datainfo.duapp.com/shopdata/userinfo.php',

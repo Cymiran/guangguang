@@ -1,0 +1,62 @@
+$w:36px;
+$h:100%;
+$bg-color:#242424;
+$color:#fff;
+#cart{
+    width: $w;
+    height: $h;
+    background : $bg-color;
+    color: $color;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    .right-bar{
+        width: 36px;
+        height: 230px;
+        position: relative;
+        top: 30%;
+        padding: 0 5px;
+        .call,.cart,.zi,.star{
+            font-size: 18px;
+            display: block;
+            text-align: center;
+            padding: 10px 5px;
+            border-bottom: 1px solid #6f6f6f;
+        }
+        .zi,.star{
+            border-bottom: 0;
+        }
+        .star{
+            font-size: 20px;
+        }
+        .cartbtn{
+            height: 130px;
+            width: 100%;
+            border-bottom: 1px solid #6f6f6f;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            cursor: pointer;
+            .cart{
+                border-bottom: 0;
+                padding: 10px 0;
+                font-size: 20px;
+            }
+            #cart-count.count{
+                position: absolute;
+                top: 12px;
+                left: 10px;
+                z-index: 101;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #ff333f;
+                color: #fff;
+                font-size: 12px;
+                display: none;
+            }
+        }
+    }
+}

@@ -22,32 +22,30 @@ define(['jquery','commen'],function($,commen){
 					message();
 					return;
 				}
-				// if(isuname && ispwd){
-					$.ajax({
-                        type:'get',
-                        url: 'http://datainfo.duapp.com/shopdata/userinfo.php',
-                        data:{
-                            "status" : "login",
-                            "userID" : getun,
-                            "password" : getpw
-                        },
-                        success:function(data){
-							console.log(data)
-							if(data == 0){
-								$('.loginmsg').html('用户名不存在');
-								message();
-								return;
-							}else if(data == 2){
-								$('.loginmsg').html('密码错误');
-								message();
-								return;
-							}else{
-								Cookie.set('username',getun)
-								window.location.href = '../../html/index.html'
-							}
+				$.ajax({
+					type:'get',
+					url: 'http://datainfo.duapp.com/shopdata/userinfo.php',
+					data:{
+						"status" : "login",
+						"userID" : getun,
+						"password" : getpw
+					},
+					success:function(data){
+						console.log(data)
+						if(data == 0){
+							$('.loginmsg').html('用户名不存在');
+							message();
+							return;
+						}else if(data == 2){
+							$('.loginmsg').html('密码错误');
+							message();
+							return;
+						}else{
+							Cookie.set('username',getun)
+							window.location.href = '../../html/index.html'
 						}
-					})
-				// }
+					}
+				})
             })
             function message(){
 				$('.loginmsg').show();

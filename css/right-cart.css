@@ -1,0 +1,58 @@
+#cart {
+  width: 36px;
+  height: 100%;
+  background: #242424;
+  color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+#cart .right-bar {
+  width: 36px;
+  height: 230px;
+  position: relative;
+  top: 30%;
+  padding: 0 5px;
+}
+#cart .right-bar .call, #cart .right-bar .cart, #cart .right-bar .zi, #cart .right-bar .star {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #6f6f6f;
+}
+#cart .right-bar .zi, #cart .right-bar .star {
+  border-bottom: 0;
+}
+#cart .right-bar .star {
+  font-size: 20px;
+}
+#cart .right-bar .cartbtn {
+  height: 130px;
+  width: 100%;
+  border-bottom: 1px solid #6f6f6f;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+#cart .right-bar .cartbtn .cart {
+  border-bottom: 0;
+  padding: 10px 0;
+  font-size: 20px;
+}
+#cart .right-bar .cartbtn #cart-count.count {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 101;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ff333f;
+  color: #fff;
+  font-size: 12px;
+  display: none;
+}

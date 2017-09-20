@@ -50,11 +50,11 @@ gulp.task('webserver',function(){
                 path:'./'
             },
             middleware:[
-                proxy('/api',{
-                    target:'http://m.womai.com/',
-                    changeOrigin:true,
-                    pathRewrite:{
-                        '^api' : ''
+                proxy('/api', {
+                    target:'http://m.womai.com',
+                    changeOrigin: true,
+                    pathRewrite: {
+                        '^/api' : ''
                     }
                 })
             ]
