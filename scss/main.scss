@@ -21,6 +21,7 @@ $w:1210px;
             }
         }
     }
+
 }
 #main-cont{
     width: 100%;
@@ -144,6 +145,7 @@ $w:1210px;
                     a:last-child{
                         margin-right: 0;
                     }
+                    
                     a{
                         display: inline-block;
                         height: 330px;
@@ -275,6 +277,7 @@ $w:1210px;
             width: $w;
             height: 662px;
             margin: 0 auto;
+            overflow: hidden;
             h3{
                 padding: 3px 20px;
                 margin: 20px 0;

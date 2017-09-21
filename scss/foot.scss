@@ -1,0 +1,38 @@
+$w:1210px;
+$h:290px;
+#footer{
+    width: 100%;
+    height: $h;
+    background: #000000;
+    .foot{
+        width: $w;
+        padding: 30px 0;
+        height: 100%;
+        margin: 0 auto;
+        p{
+            overflow: hidden ;
+            a{
+                display: inline-block;
+                margin-right: 10px;
+                height: 30px;
+                line-height: 30px;
+                color: #fff;
+                float: left;
+            }
+            b{
+                font-style: normal;
+                display: inline-block;
+                width: 1px;
+                height: 15px;
+                background: #fff;
+                float: left;
+                margin-top: 7px;
+                margin-right: 10px;
+            }
+            img{
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

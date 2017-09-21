@@ -30,8 +30,37 @@ require(['config'],function(m){
             $('#footer').load('../html/sub/footer.html')
             
             // 右边购物车导航
-            $('#cart').load('../html/sub/cart.html',() => {
+            $('#cart').load('./sub/cart.html',() => {
                 console.log('右侧购物车导航....')
+                // 显示购物车数量
+                let username = Cookie.get('username');
+                let discount = 0;
+                $.ajax({
+                    url: 'http://datainfo.duapp.com/shopdata/getCar.php',
+                    dataType : 'jsonp',
+                    data : {
+                        userID : username,
+                    },
+                    success:function(data){
+                        if(data == 0){
+                            $('#cart-count').hide();
+                        }else{
+                            $('#cart-count').show();
+                            for(let i=0;i<data.length;i++){
+                                discount +=parseInt(data[i].number);
+                            }
+                            let c = discount;
+                            if(c>99){
+                                c = '99+';
+                            }
+                            $('#cart-count').html(c);
+                        }
+                    }
+
+                })
+                $('.cartbtn').on('click',function(){
+                    window.location.href = './sub/cart-detail.html'
+                })
             })
             
         })

@@ -12,6 +12,20 @@ a:hover {
   text-decoration: none !important;
 }
 
+.sweet-alert button {
+  margin-left: 175px;
+}
+
+.sweet-alert button.cancel {
+  float: left;
+  margin-left: 100px;
+}
+
+.sweet-alert button.confirm {
+  display: block !important;
+  margin-left: 175px;
+}
+
 .cart-container {
   width: 100%;
   height: auto;
@@ -51,6 +65,7 @@ a:hover {
   width: 1210px;
   height: auto;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .cart-container .cart-main h3 {
   width: 100%;
@@ -142,4 +157,23 @@ a:hover {
 .cart-container .cart-main table .option {
   width: 120px;
   cursor: pointer;
+}
+.cart-container .cart-main table .delete {
+  margin: 0 50px;
+}
+.cart-container .cart-main table .select {
+  margin: 0 60px 0 400px;
+}
+.cart-container .cart-main table .totail {
+  margin-right: 165px;
+}
+.cart-container .cart-main table .text-red {
+  color: #ff4233;
+  font-size: 20px;
+}
+.cart-container .cart-main table .jiesuan {
+  cursor: pointer;
+}
+.cart-container .cart-main table tr.bg-gray {
+  background: #f2f2f2;
 }

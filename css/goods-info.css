@@ -73,6 +73,7 @@ button#buy.btn-danger, button#buy.btn-danger:hover, button#addCart.btn-danger, b
 .detail-main .one .one-l .zoom .big #bigCursor img#bigImg {
   width: 600px;
   height: 600px;
+  position: absolute;
 }
 .detail-main .one .one-l .zoom .small {
   width: 52px;

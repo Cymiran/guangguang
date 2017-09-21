@@ -25,7 +25,9 @@ requirejs.config({
 		'detailShow' : 'moduleJs/main/detail-show',
 		// 购物车
 		'cartDetail' : 'moduleJs/cart/cart-detail',
-		'animate' : 'animate'
+		'animate' : 'animate',
+		// 详情页
+		'zoom' : 'plugin/jquery/jquery-zoom'
 	},
 	shim: {
 		"commen" : {

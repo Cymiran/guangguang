@@ -4,6 +4,7 @@ define(['jquery','commen'],function($,com){
             console.log('加载商品列表');
             let datalist = [];
             let forlist = [];
+            getForList();
             $.ajax({
                 type: 'get',
                 url : '../../../json/goods.json',
@@ -80,46 +81,59 @@ define(['jquery','commen'],function($,com){
             })
             // 鼠标经过偏移
             $('ul#goodslist').on('mouseenter','img',function(){
-                $(this).css({"position" : "relative","left":"-3px"})
+                $(this).css({"position" : "relative","left":"-2px"})
             })
             $('ul#goodslist').on('mouseleave','img',function(){
                 $(this).css({"position" : "relative","left":"0"})
             })
             // 加载推荐产品
-            $.ajax({
-                // type:'get',
-                // url : '../../../json/product.json',
-                url:'http://datainfo.duapp.com/shopdata/getGoods.php',
-                dataType : 'jsonp',
-                success:function(data){
-                    console.log(JSON.stringify(data))
-                    forlist = data;
-                    let str = '';
-                    for(let i=0;i<forlist.length;i++){
-                        str += `
-                        <li>
-                            <a href="javascrupt:;">
-                                <img src="${forlist[i].goodsListImg}" alt="">
-                            </a>
-                            <p><a href="javascrupt:;">${forlist[i].goodsName}</a></p>
-                            <span class="price">￥${forlist[i].price}</span>
-                            <span class="buybtn">抢购</span>
-                        </li>
-                        `;
+            function getForList(){
+                $.ajax({
+                    // type:'get',
+                    // url : '../../../json/product.json',
+                    url:'http://datainfo.duapp.com/shopdata/getGoods.php',
+                    dataType : 'jsonp',
+                    success:function(data){
+                        forlist = data;
+                        let str = '';
+                        for(let i=0;i<forlist.length;i++){
+                            str += `
+                            <li>
+                                <a >
+                                    <img src="${forlist[i].goodsListImg}" alt="">
+                                </a>
+                                <p><a >${forlist[i].goodsName}</a></p>
+                                <span class="price">￥${forlist[i].price}</span>
+                                <span class="buybtn">抢购</span>
+                            </li>
+                            `;
+                        }
+                        $('ul.pro').html(str);
+                        
                     }
-                    $('ul.pro').html(str);
-                    $('ul.pro').on('click','li',function(){
-                        let forList = JSON.stringify(forlist);
-                        Cookie.set("productlist",forList)
-                        let index = $(this).index();
-                        let id = forlist[index].goodsID;
-                        console.log(forlist[index])
-                        let curInfo = JSON.stringify(forlist[index]);
-                        Cookie.set("curGoods",curInfo);
-                        window.location.href = "./sub/goods-detail.html?"+id;
-                    })
-                }
-            })
+                })
+                $('ul.pro').on('click','li',function(){
+                    let index = $(this).index();
+                    clickGood(index);
+                })
+                // $('ul.pro li a').on('click','img',function(){
+                //     let index = $(this).parent().parent().index();
+                //     // clickGood(index);
+                // })
+                // $('ul.pro li').on('click','a',function(){
+                //     let index = $(this).parent().index();
+                //     // clickGood(index);
+                // })
+            }
+            // 点击商品
+            function clickGood(index){
+                let forList = JSON.stringify(forlist);
+                let id = forlist[index].goodsID;
+                let curInfo = JSON.stringify(forlist[index]);
+                Cookie.set("productlist",forList)
+                Cookie.set("curGoods",curInfo);
+                window.location.href = "./sub/goods-detail.html?"+id;
+            }
             
         }
     }

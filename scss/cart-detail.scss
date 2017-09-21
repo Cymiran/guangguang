@@ -11,6 +11,18 @@ a:hover{
     color: #f33;
     text-decoration: none!important;
 }
+.sweet-alert button{
+    margin-left: 175px;
+}
+.sweet-alert button.cancel{
+    float: left;
+    margin-left: 100px;
+}
+.sweet-alert button.confirm{
+    display: block!important;
+    margin-left: 175px;
+}
+
 .cart-container{
     width: 100%;
     height: auto;
@@ -52,6 +64,7 @@ a:hover{
         width: $w;
         height: auto;
         margin: 0 auto;
+        padding-bottom: 100px;
         h3{
             width: 100%;
             height: 54px;
@@ -141,6 +154,25 @@ a:hover{
             .option{
                 width: 120px;
                 cursor: pointer;
+            }
+            .delete{
+                margin: 0 50px;
+            }
+            .select{
+                margin: 0 60px 0 400px;
+            }
+            .totail{
+                margin-right: 165px;
+            }
+            .text-red{
+                color: #ff4233;
+                font-size: 20px;
+            }
+            .jiesuan{
+                cursor: pointer;
+            }
+            tr.bg-gray{
+                background: #f2f2f2;
             }
         }
     }

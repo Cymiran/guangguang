@@ -234,6 +234,7 @@
   width: 1210px;
   height: 662px;
   margin: 0 auto;
+  overflow: hidden;
 }
 #main-cont .content .prolist h3 {
   padding: 3px 20px;
