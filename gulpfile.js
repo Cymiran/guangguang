@@ -4,7 +4,8 @@ const uglify = require('gulp-uglify');
 // 编译es6
 const babel = require('gulp-babel');
 // 编译scss文件
-const sass = require("gulp-ruby-sass"); //编译sass
+// const sass = require("gulp-ruby-sass"); //编译sass
+const sass = require("gulp-sass");
 const rename = require("gulp-rename"); //重命名文件
 // 即使刷新
 const connect = require('gulp-connect');
